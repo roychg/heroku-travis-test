@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn start",
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "dependencies": {
     "chai": "^4.2.0",
