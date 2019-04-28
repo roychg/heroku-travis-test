@@ -22,3 +22,35 @@ describe("/GET ROOT", () => {
 
   });
 });
+
+describe("/GET test", () => {
+  it("should return a string", done  => {
+     chai.request(server)
+      .get('/test')
+      .end((err, res) => {
+        console.log(res.body)
+        res.should.have.status(200)
+        // expect(`${res.body}`).to.equal()
+        res.body.should.have.property('test')
+        res.body.test.should.eql("test route");
+        done()
+      })
+
+  });
+});
+
+describe("/GET adsf", () => {
+  it("should return a string", done  => {
+     chai.request(server)
+      .get('/adsf')
+      .end((err, res) => {
+        console.log(res.body)
+        res.should.have.status(200)
+        // expect(`${res.body}`).to.equal()
+        res.body.should.have.property('test')
+        res.body.test.should.eql('adsf route')
+        done()
+      })
+
+  });
+});

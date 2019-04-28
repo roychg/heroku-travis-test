@@ -10,6 +10,14 @@ app.get("/", (req, res) => {
   return res.status(200).json({ testing })
 });
 
+app.get("/test", (req, res) => {
+  return res.status(200).json({ test:'test route' })
+});
+
+app.get("/adsf", (req, res) => {
+  return res.status(200).json({ test: "adsf route" });
+});
+
 const server = app.listen(3000, () => {
   console.log("App running on port 3000");
 });
