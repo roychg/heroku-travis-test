@@ -1,0 +1,11 @@
+{
+  "name": "heroku-travis-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/roychg/heroku-travis-test.git",
+  "author": "rc <48433460+roychg@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "test":"yarn test"
+  }
+}
