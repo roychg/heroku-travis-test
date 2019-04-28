@@ -6,6 +6,12 @@
   "author": "rc <48433460+roychg@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "test":"yarn test"
+    "start": "yarn start",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "mocha": "^6.1.4"
   }
 }
